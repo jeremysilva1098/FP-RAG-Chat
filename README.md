@@ -2,7 +2,7 @@
 RAG Client for freeplay content
 
 ## Demo video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oQNFPXezXdY?si=R-JbMVl0j-zooLN_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![](https://markdown-videos-api.jorgenkh.no/youtube/{oQNFPXezXdY})](https://youtu.be/{oQNFPXezXdY})
 
 ## Configure ENV variables
 Need the following env variables in a .env file at root
