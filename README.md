@@ -2,7 +2,7 @@
 RAG Client for freeplay content
 
 ## Demo video
-[![](https://markdown-videos-api.jorgenkh.no/youtube/{oQNFPXezXdY})](https://youtu.be/{oQNFPXezXdY})
+[![](https://markdown-videos-api.jorgenkh.no/youtube/oQNFPXezXdY)](https://youtu.be/oQNFPXezXdY)
 
 ## Configure ENV variables
 Need the following env variables in a .env file at root
