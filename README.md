@@ -1,5 +1,5 @@
 # FP-RAG-Chat
-RAG Client for freeplay content
+RAG Powered Chat Client for freeplay content
 
 ## Demo video
 [![](https://markdown-videos-api.jorgenkh.no/youtube/oQNFPXezXdY)](https://youtu.be/oQNFPXezXdY)
