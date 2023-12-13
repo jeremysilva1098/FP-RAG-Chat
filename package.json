@@ -1,0 +1,32 @@
+{
+  "name": "fp-rag-chat",
+  "version": "1.0.0",
+  "description": "rag app for freeplay content",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremysilva1098/FP-RAG-Chat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremysilva1098/FP-RAG-Chat/issues"
+  },
+  "homepage": "https://github.com/jeremysilva1098/FP-RAG-Chat#readme",
+  "devDependencies": {
+    "@types/html-to-text": "^9.0.4",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@qdrant/js-client-rest": "^1.7.0",
+    "dotenv": "^16.3.1",
+    "freeplay": "^0.2.25",
+    "html-to-text": "^9.0.5",
+    "jsdom": "^23.0.1",
+    "langchain": "^0.0.203"
+  }
+}
