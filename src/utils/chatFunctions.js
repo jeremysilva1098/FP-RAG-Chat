@@ -64,10 +64,31 @@ export async function sendMessage(sessionObj, message) {
     const newResponse = await sessionObj.continueChat({ newMessages: [{ 'role': 'user', 'content': enrichedMessage }] });
     return newResponse.choices[0];
 }
-// start a new conversation
+export async function getCompletion(message) {
+    // perform rag on the question
+    const vectorRes = await vector_search.vectorSearch(message, 4);
+    // get the payload from each of the results
+    const vectorPayloads = vectorRes.map((res) => res.payload);
+    // send the message to the LLM via completions
+    const newCompletion = await fpclient.getCompletion({
+        projectId: freeplayProjID,
+        templateName: 'rag-qa',
+        variables: {
+            "question": message,
+            "supporting_information": JSON.stringify(vectorRes)
+        }
+    });
+    return newCompletion.choices[0];
+}
+// via chat session
 /*
 const chatSession = await newConversation();
 console.debug(chatSession);
 const answer = await sendMessage(chatSession, "Can I deploy different prompts to different environments?");
+console.debug(answer);
+*/
+// via completions
+/*
+const answer = await getCompletion("Can I deploy different prompts to different environments?");
 console.debug(answer);
 */
