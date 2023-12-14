@@ -1,11 +1,12 @@
-
-https://github.com/jeremysilva1098/FP-RAG-Chat/assets/58676494/4e86f975-0aa3-4d1f-bf4f-b8be097a490a
 # FP-RAG-Chat
-RAG Powered Chat Client for freeplay content
+RAG Powered Chat Client for freeplay content!
+
+Implementation based on freeplay blog [Using LLMs to Automatically Evaluate RAG Prompts & Pipelines](https://freeplay.ai/blog/using-llms-to-automatically-evaluate-rag-prompts-pipelines)
 
 ## Freeplay Components
 ### Chat Client Demo Video
 (sorry file to large to embed directly!)
+
 [![](https://markdown-videos-api.jorgenkh.no/youtube/oQNFPXezXdY)](https://youtu.be/oQNFPXezXdY)
 
 ### Configuring evaluation criteria for our RAG prompt template
